@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { AdminComponent } from './admin.component';
-import { AppRoutingModule } from '../app-routing.module';
+import { AdminRoutingModule } from './admin-routing.module';
+
 
 @NgModule({
   declarations: [AdminComponent],
-  imports: [AppRoutingModule],
+  imports: [AdminRoutingModule],
 })
 export class AdminModule {}
