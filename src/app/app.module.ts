@@ -4,18 +4,13 @@ import { AdminModule } from './admin/admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
-import { ShowcaseComponent } from './showcase/showcase.component';
-// import { AdminComponent } from './admin/admin.component';
+import { ShowcaseModule } from './showcase/showcase.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductComponent,
-    ShowcaseComponent,
-    // AdminComponent
+    AppComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, AdminModule],
+  imports: [BrowserModule, AppRoutingModule, AdminModule, ShowcaseModule],
   providers: [],
   bootstrap: [AppComponent],
 })
